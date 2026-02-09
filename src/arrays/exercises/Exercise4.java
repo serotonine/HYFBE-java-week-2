@@ -11,11 +11,34 @@ package arrays.exercises;
  */
 
 import java.util.Arrays;
+
 public class Exercise4
 {
     public static void main(String[] args)
     {
         // TODO: Implement exercise
+        int[] numbers = new int[]{55,45,40,34,-4, 456, 3};
+        // 3. Copy into another array.
+        int[] sortedNumbers = Arrays.copyOf(numbers, numbers.length);
+        // 2. Sort array.
+        Arrays.sort(sortedNumbers);
+
+        System.out.println("numbers: " + Arrays.toString(numbers));
+        System.out.println("Sorted numbers: " + Arrays.toString(sortedNumbers));
+        // 4. Search for a value.
+        // !! The array must be sorted !!
+        /*
+         * If the value is not found, it calculates the insertion point—the index
+         * where the value would be inserted to maintain the sorted order of the array.
+         */
+        int index = Arrays.binarySearch(sortedNumbers, -1 );
+        System.out.println("Search -1 " + index);
+        index = Arrays.binarySearch(sortedNumbers, 55 );
+        System.out.println("Search 55 " + index);
+        // 5. Compare two arrays.
+        System.out.println("Are equals the 2 arrays ? " + Arrays.equals(numbers,sortedNumbers));
+        // To check if two arrays are the same reference
+        System.out.println("numbers == sortedNumbers. Same reference? " + (numbers == sortedNumbers));
     }
 }
 
