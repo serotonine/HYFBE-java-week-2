@@ -53,7 +53,6 @@ public class Exercise6
             }
 
         }
-
         // scanner.next();
     }
     public static int rd(){

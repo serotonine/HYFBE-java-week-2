@@ -13,6 +13,20 @@ public class Exercise1
     public static void main(String[] args)
     {
         // TODO: Create Book objects and test methods
+        Book myBook = new Book();
+        myBook.title = "Don't shoot on the mockingbird";
+        myBook.author = "Harper Lee's";
+        myBook.displayInfo();
+
     }
 }
+
+class  Book {
+    String title;
+    String author;
+    void displayInfo(){
+        System.out.println("Title = "+ title + " by " + author);
+    }
+}
+
 

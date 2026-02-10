@@ -24,17 +24,25 @@ public class Exercise1
         System.out.println("Square of 4 = " + obj.square(4));
 
         // TODO: Call cube() and sayHello() here
+        System.out.println("Cube of 6 = " + obj.cube(6));
+        System.out.println("Say hello to Julie = " + obj.sayHello("Julie"));
     }
 
-    // Example method: square
+    // Example method: square.
     public int square(int num)
     {
         return num * num;
     }
 
     // TODO: Write cube(int num)
+    public double cube (int num){
+        return Math.cbrt(num);
+}
 
     // TODO: Write sayHello(String name)
+    public String  sayHello(String name){
+      return "Hello " + name;
+    }
 
 }
 

@@ -12,6 +12,9 @@ public class Example2
                 {4, 5, 6},
                 {7, 8, 9}
         };
+        System.out.print(matrix[2][0] + " ");
+        System.out.print(matrix[2][1] + " ");
+        System.out.print(matrix[2][2] + " ");
 
         for (int i = 0; i < matrix.length; i++)
         {

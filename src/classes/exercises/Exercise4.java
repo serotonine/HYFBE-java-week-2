@@ -14,5 +14,34 @@ public class Exercise4
     public static void main(String[] args)
     {
         // TODO: Implement all requirements and test them
+        Cat pomponette = new Cat();
+        pomponette.sound();
+        //
+        MathUtil m = new MathUtil();
+        int result = m.square(6);
+        System.out.println(result);
+        //
+        AbstractFinalInner absFI = new AbstractFinalInner("That is the end my friend");
+    }
+    static class AbstractFinalInner {
+        AbstractFinalInner(String mess){
+            System.out.println(mess);
+        }
+    }
+}
+
+abstract class Animal{
+    abstract void sound();
+}
+
+class Cat extends Animal{
+    void sound(){
+        System.out.println("Miaowwww!!!");
+    }
+}
+
+final class MathUtil{
+    int square(int nb){
+        return nb * nb;
     }
 }

@@ -20,6 +20,10 @@ public class Exercise2
         obj.publicMethod();
 
         // TODO: Call other methods here
+        obj.myProtectedMethod(1);
+        obj.myPrivateMethod(2);
+        obj.myDefaultMethod(3);
+        obj.myFinalMethod(4);
     }
     // Example: public method
     public void publicMethod()
@@ -28,13 +32,28 @@ public class Exercise2
     }
 
     // TODO: Add protectedMethod()
+    protected void myProtectedMethod(int nb ){
+        System.out.println(nb + " => My protected Method");
+    }
 
     // TODO: Add defaultMethod()
+    void myDefaultMethod(int nb ){
+        System.out.println(nb + " => My Default Method");
+    }
 
     // TODO: Add privateMethod()
+    private void myPrivateMethod(int nb ){
+        System.out.println(nb + " => My Private Method");
+    }
 
     // TODO: Add staticMethod()
+    static void myStaticMethod(int nb ){
+        System.out.println(nb + " => My Static Method");
+    }
 
     // TODO: Add finalMethod()
+    final void myFinalMethod(int nb ){
+        System.out.println(nb + " => My Final Method");
+    }
 
 }
