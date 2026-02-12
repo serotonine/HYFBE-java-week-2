@@ -35,11 +35,12 @@ public class Example1
 
 
         // Call static method
-        staticGreeting();
+        Example1.staticGreeting();  //writing Example1. is optional
 
         // Create object to call instance methods
         Example1 obj = new Example1();
         obj.instanceGreeting();
+//        Example1.instanceGreeting();  //this cannot be done because instanceGreeting is static
         obj.displayMessage("Java Methods are powerful!");
         System.out.println(
                 "Square of 5 = " + obj.square(5));

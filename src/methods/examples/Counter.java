@@ -8,6 +8,12 @@ class Counter {
 
     void increment() {
         this.value++;
+        Example2 ex2 = new Example2();
+//        ex2.privateMethod();  //we cannot reach it because its private
+    }
+
+    void multiplyByFactor() {
+        this.value *= factor;
     }
 
     //Key idea is: Instance methods work with object state.

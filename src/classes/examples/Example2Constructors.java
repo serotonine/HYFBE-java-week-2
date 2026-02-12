@@ -5,15 +5,15 @@ package classes.examples;
  * - Default and Parameterized Constructors
  */
 
-public class Example2
+public class Example2Constructors
 {
     public static void main(String[] args)
     {
-        Student s1 = new Student();
-        Student s2 = new Student("Alice", 20);
+        Student who = new Student();
+        Student preeti = new Student("Preeti", 20);
 
-        s1.display();
-        s2.display();
+        who.display();
+        preeti.display();
     }
 }
 
@@ -23,16 +23,15 @@ class Student
     int age;
 
     // Default constructor
-    Student()
-    {
+    Student() {
         name = "Unknown";
         age = 0;
     }
 
     // Parameterized constructor
-    Student(String n, int a)
+    Student(String name, int a)
     {
-        name = n;
+        this.name = name;
         age = a;
     }
 
@@ -40,4 +39,5 @@ class Student
     {
         System.out.println(name + " is " + age + " years old");
     }
+
 }

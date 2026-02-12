@@ -11,6 +11,8 @@ public class Example1
     {
         int[] numbers = {10, 20, 30, 40, 50};
 
+        System.out.println(numbers.length);
+
         System.out.println("Using for loop:");
         for (int i = 0; i < numbers.length; i++)
         {

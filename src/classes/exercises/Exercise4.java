@@ -7,7 +7,7 @@ package classes.exercises;
  * 1. Create an abstract class Animal with abstract method sound().
  * 2. Create a subclass Cat that implements sound().
  * 3. Create a final class MathUtil with method square(int).
- * 4. Create an inner class inside Exercise4_AbstractFinalInner that prints a message.
+ * 4. Create an inner class inside Exercise4_AbstractFinalInner that prints a message.  //do not do it yet
  */
 public class Exercise4
 {

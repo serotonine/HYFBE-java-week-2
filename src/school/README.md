@@ -1,0 +1,1 @@
+This is a package to focus on keyword static
