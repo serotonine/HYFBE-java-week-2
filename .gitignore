@@ -60,3 +60,4 @@ dependency-reduced-pom.xml
 
 # Other
 *.swp
+*iml

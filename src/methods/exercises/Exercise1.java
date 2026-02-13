@@ -36,7 +36,7 @@ public class Exercise1
 
     // TODO: Write cube(int num)
     public double cube (int num){
-        return Math.cbrt(num);
+        return num * num * num;
 }
 
     // TODO: Write sayHello(String name)

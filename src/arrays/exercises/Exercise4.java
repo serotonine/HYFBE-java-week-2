@@ -31,8 +31,8 @@ public class Exercise4
          * If the value is not found, it calculates the insertion point—the index
          * where the value would be inserted to maintain the sorted order of the array.
          */
-        int index = Arrays.binarySearch(sortedNumbers, -1 );
-        System.out.println("Search -1 " + index);
+        int index = Arrays.binarySearch(sortedNumbers, -5 );
+        System.out.println("Search 10 " + index);
         index = Arrays.binarySearch(sortedNumbers, 55 );
         System.out.println("Search 55 " + index);
         // 5. Compare two arrays.
