@@ -17,6 +17,7 @@ public class Exercise5
     {
         // TODO: Implement exercise
         int[] numbers = new int[]{rd(),rd(),rd(),rd(),rd(),rd()};
+        // int[] numbers = new int[]{3,3,7,7};
         System.out.println(Arrays.toString(numbers));
         int luck = 5;
         Scanner scanner = new Scanner(System.in);
@@ -24,9 +25,9 @@ public class Exercise5
             System.out.print("Guess a number(1-100) in numbers: ");
             try{
                int nb =  scanner.nextInt();
-               boolean result = linearSearch(numbers, nb);
-               if(result){
-                   System.out.printf("WIN!! %d is in position %d %n", nb, result);
+               char[] result = linearSearch(numbers, nb);
+               if(result.length > 0){
+                   System.out.printf("WIN!! %d is in position %s %n", nb, Arrays.toString(result));
                    System.out.print("Do you want to replay? (y-n) ");
                    boolean replay = scanner.next().equalsIgnoreCase("y");
                    if(replay){ luck = 5;}
@@ -57,14 +58,14 @@ public class Exercise5
     public static int rd(){
         return (int) Math.round(Math.random() * 100);
     }
-    public static boolean linearSearch(int[] numbers, int nb){
-        boolean found = false;
-        for(int number: numbers){
-            if(number == nb){
-                found = true;
-                break;
+    public static char[] linearSearch(int[] numbers, int nb){
+        String found ="";
+        for(int i= 0; i< numbers.length; i++){
+            if(numbers[i] == nb){
+                found += i;
+
             }
         }
-        return found;
+        return  found.toCharArray();
     }
 }
